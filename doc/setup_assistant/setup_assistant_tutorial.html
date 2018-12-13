@@ -304,7 +304,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../pick_place/pick_place_tutorial.html">Pick and Place Tutorial</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#running-the-demo">Running The Demo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <tt class="docutils literal"><span class="pre">moveit_msgs::Grasp</span></tt></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#the-entire-code">The Entire Code</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#creating-environment">Creating Environment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#pick-pipeline">Pick Pipeline</a><ul>
@@ -338,8 +338,11 @@
 <li class="toctree-l2"><a class="reference internal" href="#step-5-add-robot-poses">Step 5: Add Robot Poses</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#step-6-label-end-effectors">Step 6: Label End Effectors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#step-7-add-passive-joints">Step 7: Add Passive Joints</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#step-8-add-author-information">Step 8: Add Author Information</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#step-9-generate-configuration-files">Step 9: Generate Configuration Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-8-3d-perception">Step 8: 3D Perception</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-9-gazebo-simulation">Step 9: Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-10-ros-control">Step 10: ROS Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-11-add-author-information">Step 11: Add Author Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-12-generate-configuration-files">Step 12: Generate Configuration Files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#what-s-next">What&#8217;s Next</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#additional-reading">Additional Reading</a></li>
 </ul>
@@ -413,6 +416,19 @@
 </li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html">Handeye Calibration Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#step-1-set-sensor-mount-type">Step 1: Set Sensor Mount Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#step-2-select-ax-xb-solver">Step 2: Select AX=XB Solver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#step-3-select-image-topic-and-camerainfo-topic">Step 3: Select Image Topic and CameraInfo Topic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#step-4-select-calibration-board">Step 4: Select Calibration Board</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#step-5-set-frame-names">Step 5: Set Frame Names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#step-6-start-calibration">Step 6: Start Calibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#step-7-compute-camera-robot-transform">Step 7: Compute Camera Robot Transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#step-8-check-calibration-result">Step 8: Check Calibration Result</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ikfast/ikfast_tutorial.html">IKFast Kinematics Solver</a><ul>
@@ -489,6 +505,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../chomp_planner/chomp_planner_tutorial.html#tweaking-some-of-the-parameters-for-chomp">Tweaking some of the parameters for CHOMP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chomp_planner/chomp_planner_tutorial.html#difference-between-plans-obtained-by-chomp-and-ompl">Difference between plans obtained by CHOMP and OMPL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chomp_planner/chomp_planner_tutorial.html#using-ompl-as-a-pre-processor-for-chomp">Using OMPL as a pre-processor for CHOMP</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../stomp_planner/stomp_planner_tutorial.html">STOMP Planner</a><ul>
@@ -503,6 +520,20 @@
 <li class="toctree-l2"><a class="reference internal" href="../stomp_planner/stomp_planner_tutorial.html#tweaking-some-of-the-parameters-for-stomp">Tweaking some of the parameters for STOMP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../stomp_planner/stomp_planner_tutorial.html#difference-between-plans-obtained-by-stomp-chomp-and-ompl">Difference between plans obtained by STOMP, CHOMP and OMPL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../stomp_planner/stomp_planner_tutorial.html#running-stomp-unit-tests">Running STOMP Unit Tests</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html">Planning Adapter Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#installing-moveit-from-source">Installing MoveIt! from Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#using-planning-request-adapter-with-your-motion-planner">Using Planning Request Adapter with Your Motion Planner</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#running-ompl-as-a-pre-processor-for-chomp">Running OMPL as a pre-processor for CHOMP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#running-chomp-as-a-post-processor-for-stomp">Running CHOMP as a post-processor for STOMP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#running-ompl-as-a-pre-processor-for-stomp">Running OMPL as a pre-processor for STOMP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#running-stomp-as-a-post-processor-for-chomp">Running STOMP as a post-processor for CHOMP</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#planning-insights-for-different-motion-planners-and-planners-with-planning-adapters">Planning Insights for different motion planners and planners with planning adapters</a></li>
 </ul>
 </li>
 </ul>
@@ -613,7 +644,7 @@ package</a> for Kinetic:</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first">If you have the <tt class="docutils literal"><span class="pre">panda_moveit_config</span></tt> package already git-cloned from the <em>Getting Started</em> page, be sure to delete that now since this tutorial will teach you how to create it from scratch:</p>
+<li><p class="first">If you have the <code class="docutils literal"><span class="pre">panda_moveit_config</span></code> package already git-cloned from the <em>Getting Started</em> page, be sure to delete that now since this tutorial will teach you how to create it from scratch:</p>
 <div class="highlight-python"><div class="highlight"><pre>cd ~/ws_moveit/src
 rm -rf panda_moveit_config
 catkin clean panda_moveit_config
@@ -789,16 +820,70 @@ cannot (kinematically) plan for these joints because they can&#8217;t be
 directly controlled. The Panda does not have any passive
 joints so we will skip this step.</p>
 </div>
-<div class="section" id="step-8-add-author-information">
-<h2>Step 8: Add Author Information<a class="headerlink" href="#step-8-add-author-information" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="step-8-3d-perception">
+<h2>Step 8: 3D Perception<a class="headerlink" href="#step-8-3d-perception" title="Permalink to this headline">¶</a></h2>
+<p>The 3D Perception tab is meant to set the parameters of the YAML configuration file
+for configuring the 3D sensors <cite>sensors_3d.yaml</cite>.</p>
+<p>e.g. <cite>point_cloud</cite> parameters:</p>
+<a class="reference internal image-reference" href="../../_images/setup_assistant_panda_3d_perception_point_cloud.png"><img alt="../../_images/setup_assistant_panda_3d_perception_point_cloud.png" src="../../_images/setup_assistant_panda_3d_perception_point_cloud.png" style="width: 700px;" /></a>
+<p>For more details about those parameters please see perception pipeline <a class="reference external" href="http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/perception_pipeline/perception_pipeline_tutorial.html">tutorial</a>.</p>
+<p>In case of <cite>sensors_3d.yaml</cite> was not needed, choose <cite>None</cite>.</p>
+<a class="reference internal image-reference" href="../../_images/setup_assistant_panda_3d_perception.png"><img alt="../../_images/setup_assistant_panda_3d_perception.png" src="../../_images/setup_assistant_panda_3d_perception.png" style="width: 700px;" /></a>
+</div>
+<div class="section" id="step-9-gazebo-simulation">
+<h2>Step 9: Gazebo Simulation<a class="headerlink" href="#step-9-gazebo-simulation" title="Permalink to this headline">¶</a></h2>
+<p>The Simulation tab can be used to help you simulate your robot with Gazebo by generating a new Gazebo compatible urdf if needed.</p>
+<a class="reference internal image-reference" href="../../_images/setup_assistant_panda_simulation_screen.png"><img alt="../../_images/setup_assistant_panda_simulation_screen.png" src="../../_images/setup_assistant_panda_simulation_screen.png" style="width: 700px;" /></a>
+<p>You can use the generated robot <cite>urdf</cite> to spawn the robot in Gazebo in the following way.</p>
+<ul>
+<li><p class="first">Use rosrun to start gazebo empty world:</p>
+<div class="highlight-python"><div class="highlight"><pre>roslaunch gazebo_ros empty_world.launch paused:=true use_sim_time:=false gui:=true throttled:=false recording:=false debug:=true
+</pre></div>
+</div>
+</li>
+<li><p class="first">Use rosrun to spawn the robot:</p>
+<div class="highlight-python"><div class="highlight"><pre>rosrun gazebo_ros spawn_model -file &lt;/path_to_new_urdf/file_name.urdf&gt; -urdf -x 0 -y 0 -z 1 -model panda
+</pre></div>
+</div>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/setup_assistant_panda_gazebo.png"><img alt="../../_images/setup_assistant_panda_gazebo.png" src="../../_images/setup_assistant_panda_gazebo.png" style="width: 700px;" /></a>
+</div>
+<div class="section" id="step-10-ros-control">
+<h2>Step 10: ROS Control<a class="headerlink" href="#step-10-ros-control" title="Permalink to this headline">¶</a></h2>
+<p>ROS Control is a set of packages that include controller interfaces, controller managers, transmissions and hardware_interfaces, for more details please look at <cite>ros_control</cite> <a class="reference external" href="http://wiki.ros.org/ros_control">documentation</a></p>
+<p>ROS Control tab can be used to auto generate simulated controllers to actuate the joints of your robot. This will allow us to provide the correct ROS interfaces MoveIt!.</p>
+<ul class="simple">
+<li>Click on the <em>ROS Control</em> pane selector.</li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/setup_assistant_panda_ros_control.png"><img alt="../../_images/setup_assistant_panda_ros_control.png" src="../../_images/setup_assistant_panda_ros_control.png" style="width: 700px;" /></a>
+<ul class="simple">
+<li>Click on <em>Add Controller</em> and you should see the following screen:</li>
+<li>We will first add Panda arm position controller</li>
+<li>Enter <em>Controller Name</em> as <strong>arm_position_controller</strong></li>
+<li>Choose <strong>position_controllers/JointPositionController</strong> as the controller type</li>
+<li>Next you have to choose this controller joints, you can add joints individually or add all the joints in a planning group all together.</li>
+<li>Now, click on Add Planning Group Joints.</li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/setup_assistant_panda_ros_control_create.png"><img alt="../../_images/setup_assistant_panda_ros_control_create.png" src="../../_images/setup_assistant_panda_ros_control_create.png" style="width: 700px;" /></a>
+<ul class="simple">
+<li>Choose panda_arm planning group to add all the joints in that group to the arm controller.</li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/setup_assistant_panda_ros_control_add_joints.png"><img alt="../../_images/setup_assistant_panda_ros_control_add_joints.png" src="../../_images/setup_assistant_panda_ros_control_add_joints.png" style="width: 700px;" /></a>
+<ul class="simple">
+<li>Click <em>Save</em> to save the selected controller.</li>
+</ul>
+</div>
+<div class="section" id="step-11-add-author-information">
+<h2>Step 11: Add Author Information<a class="headerlink" href="#step-11-add-author-information" title="Permalink to this headline">¶</a></h2>
 <p>Catkin requires author information for publishing purposes</p>
 <ul class="simple">
 <li>Click on the <em>Author Information</em> pane.</li>
 <li>Enter your name and email address.</li>
 </ul>
 </div>
-<div class="section" id="step-9-generate-configuration-files">
-<h2>Step 9: Generate Configuration Files<a class="headerlink" href="#step-9-generate-configuration-files" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="step-12-generate-configuration-files">
+<h2>Step 12: Generate Configuration Files<a class="headerlink" href="#step-12-generate-configuration-files" title="Permalink to this headline">¶</a></h2>
 <p>You are almost there. One last step - generating all the configuration
 files that you will need to start using MoveIt!</p>
 <ul class="simple">

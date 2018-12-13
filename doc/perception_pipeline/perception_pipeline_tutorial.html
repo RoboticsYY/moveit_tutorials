@@ -35,7 +35,7 @@
 
   
     <link rel="top" title="moveit_tutorials Kinetic documentation" href="../../index.html"/>
-        <link rel="next" title="IKFast Kinematics Solver" href="../ikfast/ikfast_tutorial.html"/>
+        <link rel="next" title="Handeye Calibration Tutorial" href="../handeye_calibration/handeye_calibration_tutorial.html"/>
         <link rel="prev" title="Low Level Controllers" href="../controller_configuration/controller_configuration_tutorial.html"/> 
 
   
@@ -304,7 +304,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../pick_place/pick_place_tutorial.html">Pick and Place Tutorial</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#running-the-demo">Running The Demo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <tt class="docutils literal"><span class="pre">moveit_msgs::Grasp</span></tt></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#understanding-moveit-msgs-grasp">Understanding <code class="docutils literal"><span class="pre">moveit_msgs::Grasp</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#the-entire-code">The Entire Code</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#creating-environment">Creating Environment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pick_place/pick_place_tutorial.html#pick-pipeline">Pick Pipeline</a><ul>
@@ -338,8 +338,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-5-add-robot-poses">Step 5: Add Robot Poses</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-6-label-end-effectors">Step 6: Label End Effectors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-7-add-passive-joints">Step 7: Add Passive Joints</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-8-add-author-information">Step 8: Add Author Information</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-9-generate-configuration-files">Step 9: Generate Configuration Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-8-3d-perception">Step 8: 3D Perception</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-9-gazebo-simulation">Step 9: Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-10-ros-control">Step 10: ROS Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-11-add-author-information">Step 11: Add Author Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#step-12-generate-configuration-files">Step 12: Generate Configuration Files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#what-s-next">What&#8217;s Next</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setup_assistant/setup_assistant_tutorial.html#additional-reading">Additional Reading</a></li>
 </ul>
@@ -413,6 +416,19 @@
 </li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html">Handeye Calibration Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#step-1-set-sensor-mount-type">Step 1: Set Sensor Mount Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#step-2-select-ax-xb-solver">Step 2: Select AX=XB Solver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#step-3-select-image-topic-and-camerainfo-topic">Step 3: Select Image Topic and CameraInfo Topic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#step-4-select-calibration-board">Step 4: Select Calibration Board</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#step-5-set-frame-names">Step 5: Set Frame Names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#step-6-start-calibration">Step 6: Start Calibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#step-7-compute-camera-robot-transform">Step 7: Compute Camera Robot Transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../handeye_calibration/handeye_calibration_tutorial.html#step-8-check-calibration-result">Step 8: Check Calibration Result</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ikfast/ikfast_tutorial.html">IKFast Kinematics Solver</a><ul>
@@ -489,6 +505,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../chomp_planner/chomp_planner_tutorial.html#tweaking-some-of-the-parameters-for-chomp">Tweaking some of the parameters for CHOMP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chomp_planner/chomp_planner_tutorial.html#difference-between-plans-obtained-by-chomp-and-ompl">Difference between plans obtained by CHOMP and OMPL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chomp_planner/chomp_planner_tutorial.html#using-ompl-as-a-pre-processor-for-chomp">Using OMPL as a pre-processor for CHOMP</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../stomp_planner/stomp_planner_tutorial.html">STOMP Planner</a><ul>
@@ -503,6 +520,20 @@
 <li class="toctree-l2"><a class="reference internal" href="../stomp_planner/stomp_planner_tutorial.html#tweaking-some-of-the-parameters-for-stomp">Tweaking some of the parameters for STOMP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../stomp_planner/stomp_planner_tutorial.html#difference-between-plans-obtained-by-stomp-chomp-and-ompl">Difference between plans obtained by STOMP, CHOMP and OMPL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../stomp_planner/stomp_planner_tutorial.html#running-stomp-unit-tests">Running STOMP Unit Tests</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html">Planning Adapter Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#installing-moveit-from-source">Installing MoveIt! from Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#using-planning-request-adapter-with-your-motion-planner">Using Planning Request Adapter with Your Motion Planner</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#running-ompl-as-a-pre-processor-for-chomp">Running OMPL as a pre-processor for CHOMP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#running-chomp-as-a-post-processor-for-stomp">Running CHOMP as a post-processor for STOMP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#running-ompl-as-a-pre-processor-for-stomp">Running OMPL as a pre-processor for STOMP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#running-stomp-as-a-post-processor-for-chomp">Running STOMP as a post-processor for CHOMP</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../planning_adapters/planning_adapters_tutorial.html#planning-insights-for-different-motion-planners-and-planners-with-planning-adapters">Planning Insights for different motion planners and planners with planning adapters</a></li>
 </ul>
 </li>
 </ul>
@@ -600,12 +631,12 @@ Once properly configured, you should see something like this in rviz:</p>
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
 <p>In this section, we will walk through configuring the 3D sensors on your robot with MoveIt!. The primary component in MoveIt! that deals with 3D perception is the Occupancy Map Updater. The updater uses a plugin architecture to process different types of input. The currently available plugins in MoveIt! are:</p>
 <ul class="simple">
-<li>The PointCloud Occupancy Map Updater: which can take as input point clouds (<tt class="docutils literal"><span class="pre">sensor_msgs/PointCloud2</span></tt>)</li>
-<li>The Depth Image Occupancy Map Updater: which can take as input Depth Images (<tt class="docutils literal"><span class="pre">sensor_msgs/Image</span></tt>)</li>
+<li>The PointCloud Occupancy Map Updater: which can take as input point clouds (<code class="docutils literal"><span class="pre">sensor_msgs/PointCloud2</span></code>)</li>
+<li>The Depth Image Occupancy Map Updater: which can take as input Depth Images (<code class="docutils literal"><span class="pre">sensor_msgs/Image</span></code>)</li>
 </ul>
 <div class="section" id="yaml-configuration-file-point-cloud">
 <h3>YAML Configuration file (Point Cloud)<a class="headerlink" href="#yaml-configuration-file-point-cloud" title="Permalink to this headline">¶</a></h3>
-<p>We will have to generate a YAML configuration file for configuring the 3D sensors. Please see <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config/blob/master/config/sensors_kinect_pointcloud.yaml">this example file</a> for processing point clouds, located in the <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config">panda_moveit_config repository for Kinetic</a>.
+<p>We will have to generate a YAML configuration file for configuring the 3D sensors. Please see <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config/blob/kinetic-devel/config/sensors_kinect_pointcloud.yaml">this example file</a> for processing point clouds, located in the <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config">panda_moveit_config repository for Kinetic</a>.
 Save this file in the config folder in the robot&#8217;s moveit_config package with name &#8220;sensors_kinect_pointcloud.yaml&#8221;:</p>
 <div class="highlight-python"><div class="highlight"><pre>sensors:
   - sensor_plugin: occupancy_map_monitor/PointCloudOctomapUpdater
@@ -635,7 +666,7 @@ Save this file in the config folder in the robot&#8217;s moveit_config package w
 </div>
 <div class="section" id="yaml-configuration-file-depth-map">
 <h3>YAML Configuration file (Depth Map)<a class="headerlink" href="#yaml-configuration-file-depth-map" title="Permalink to this headline">¶</a></h3>
-<p>We will have to generate a YAML configuration file for configuring the 3D sensors. An <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config/blob/master/config/sensors_kinect_depthmap.yaml">example file for processing depth images</a> can be found in the <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config">panda_moveit_config repository</a> as well.
+<p>We will have to generate a YAML configuration file for configuring the 3D sensors. An <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config/blob/kinetic-devel/config/sensors_kinect_depthmap.yaml">example file for processing depth images</a> can be found in the <a class="reference external" href="https://github.com/ros-planning/panda_moveit_config">panda_moveit_config repository</a> as well.
 Save this file in the config folder in the robot&#8217;s moveit_config package with name &#8220;sensors_kinect_depthmap.yaml&#8221;:</p>
 <div class="highlight-python"><div class="highlight"><pre>sensors:
   - sensor_plugin: occupancy_map_monitor/DepthImageOctomapUpdater
@@ -675,7 +706,7 @@ Save this file in the config folder in the robot&#8217;s moveit_config package w
 <div class="highlight-python"><div class="highlight"><pre>&lt;rosparam command=&quot;load&quot; file=&quot;$(find panda_moveit_config)/config/sensors_kinect_pointcloud.yaml&quot; /&gt;
 </pre></div>
 </div>
-<p>If you are using depthmap change the name of the yaml file to <tt class="docutils literal"><span class="pre">sensors_kinect_depthmap.yaml</span></tt>.
+<p>If you are using depthmap change the name of the yaml file to <code class="docutils literal"><span class="pre">sensors_kinect_depthmap.yaml</span></code>.
 Note that you will need to input the path to the right file you have created above.</p>
 </div>
 <div class="section" id="octomap-configuration">
@@ -829,7 +860,7 @@ If you need to find the  actual distance d from the point to the camera, you sho
 angle the point made horizontally- <code> atan2(point.z,point.x);</code> <br />
 angle the point made Vertically- <code> atan2(point.z, point.y);</code> <br />
 Loop over the entire pointcloud.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="k">const</span> <span class="n">point</span> <span class="o">:</span> <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">)</span>
+<div class="highlight-c++"><div class="highlight"><pre><span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="k">const</span> <span class="nl">point</span> <span class="p">:</span> <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">)</span>
 <span class="p">{</span>
   <span class="cm">/* Find the coordinates of the highest point */</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">atan2</span><span class="p">(</span><span class="n">point</span><span class="p">.</span><span class="n">z</span><span class="p">,</span> <span class="n">point</span><span class="p">.</span><span class="n">y</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">min_angle_y</span><span class="p">)</span>
@@ -928,7 +959,7 @@ Loop over the entire pointcloud.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../ikfast/ikfast_tutorial.html" class="btn btn-neutral float-right" title="IKFast Kinematics Solver" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../handeye_calibration/handeye_calibration_tutorial.html" class="btn btn-neutral float-right" title="Handeye Calibration Tutorial" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../controller_configuration/controller_configuration_tutorial.html" class="btn btn-neutral" title="Low Level Controllers" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

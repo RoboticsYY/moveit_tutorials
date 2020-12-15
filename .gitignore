@@ -6,3 +6,4 @@ build
 Gemfile
 native_build
 *.gdb
+.vscode

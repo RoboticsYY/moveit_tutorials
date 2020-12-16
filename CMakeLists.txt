@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.10.3)
 project(moveit_tutorials)
 
+# Common cmake code applied to all moveit packages
 find_package(moveit_common REQUIRED)
 moveit_package()
 
@@ -28,6 +29,7 @@ find_package(tf2_ros REQUIRED)
 find_package(Eigen3 REQUIRED)
 # find_package(Boost REQUIRED system filesystem date_time thread)
 find_package(PCL REQUIRED)
+find_package(ament_index_cpp REQUIRED)
 
 # set(THIS_PACKAGE_INCLUDE_DIRS
 #   doc/interactivity/include

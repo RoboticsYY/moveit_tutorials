@@ -9,6 +9,7 @@ ament_target_dependencies(pcd_publisher
   rclcpp
   sensor_msgs
   pcl_conversions
+  ament_index_cpp
 )
 target_link_libraries(pcd_publisher ${PCL_LIBRARIES})
 
@@ -17,7 +18,8 @@ TARGETS
     # bag_publisher_maintain_time
     # cylinder_segment
     pcd_publisher
-DESTINATION bin)
+DESTINATION lib/${PROJECT_NAME}/)
 
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
-install(DIRECTORY data DESTINATION bin)
+install(DIRECTORY data DESTINATION share/${PROJECT_NAME})
+install(DIRECTORY config DESTINATION share/${PROJECT_NAME})

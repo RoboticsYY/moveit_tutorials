@@ -18,4 +18,6 @@ sensor2:
     padding_scale: 4.0
     padding_offset: 0.03
     max_update_rate: 1.0
+    skip_vertical_pixels: 4
+    skip_horizontal_pixels: 6
     filtered_cloud_topic: filtered_cloud

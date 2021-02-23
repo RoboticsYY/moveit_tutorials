@@ -69,7 +69,7 @@ def generate_launch_description():
     # Start the actual move_group node/action server
     run_move_group_node = Node(package='moveit_ros_move_group',
                                executable='move_group',
-                               prefix='xterm -fs 10 -e gdb --ex=run --args',
+                            #    prefix='xterm -fs 10 -e gdb --ex run --args',
                                output='screen',
                                parameters=[robot_description,
                                            robot_description_semantic,
